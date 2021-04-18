@@ -12,8 +12,8 @@ function MyCalendar() {
 
 	const fetchTrainings = () => {
 		fetch("https://customerrest.herokuapp.com/gettrainings")
-			.then(response => response.json())
-			.then(data => setTrainings(data));
+		.then(response => response.json())
+		.then(data => setTrainings(data));
 	};
 
 	let events = [];

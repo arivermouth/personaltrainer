@@ -49,81 +49,81 @@ function EditCustomer(props) {
 
     return (
         <div>
-        <Tooltip title="Edit">
-            <IconButton color="primary" onClick={handleClickOpen}>
-                <EditIcon />
-            </IconButton>
-        </Tooltip>
-        <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-            <DialogTitle id="form-dialog-title">Edit Customer</DialogTitle>
-            <DialogContent>
-                <TextField
-                    autoFocus
-                    margin="dense"
-                    label="First name"
-                    name="firstname"
-                    value={customer.firstname}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-                <TextField
-                    margin="dense"
-                    label="Last name"
-                    name="lastname"
-                    value={customer.lastname}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-                <TextField
-                    margin="dense"
-                    label="Email"
-                    name="email"
-                    value={customer.email}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-                <TextField
-                    margin="dense"
-                    label="Phone"
-                    name="phone"
-                    value={customer.phone}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-                <TextField
-                    margin="dense"
-                    label="Street Address"
-                    name="streetaddress"
-                    value={customer.streetaddress}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-                <TextField
-                    margin="dense"
-                    label="Postcode"
-                    name="postcode"
-                    value={customer.postcode}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-                <TextField
-                    margin="dense"
-                    label="City"
-                    name="city"
-                    value={customer.city}
-                    onChange={inputChanged}
-                    fullWidth
-                />
-            </DialogContent>
-            <DialogActions>
-                <Button onClick={handleClose} color="primary">
-                    Cancel
-                </Button>
-                <Button onClick={handleSave} color="primary">
-                    Save
-                </Button>
-            </DialogActions>
-        </Dialog>
+            <Tooltip title="Edit">
+                <IconButton color="primary" onClick={handleClickOpen}>
+                    <EditIcon />
+                </IconButton>
+            </Tooltip>
+            <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
+                <DialogTitle id="form-dialog-title">Edit Customer</DialogTitle>
+                <DialogContent>
+                    <TextField
+                        autoFocus
+                        margin="dense"
+                        label="First name"
+                        name="firstname"
+                        value={customer.firstname}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Last name"
+                        name="lastname"
+                        value={customer.lastname}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Email"
+                        name="email"
+                        value={customer.email}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Phone"
+                        name="phone"
+                        value={customer.phone}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Street Address"
+                        name="streetaddress"
+                        value={customer.streetaddress}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        label="Postcode"
+                        name="postcode"
+                        value={customer.postcode}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                    <TextField
+                        margin="dense"
+                        label="City"
+                        name="city"
+                        value={customer.city}
+                        onChange={inputChanged}
+                        fullWidth
+                    />
+                </DialogContent>
+                <DialogActions>
+                    <Button onClick={handleClose} color="primary">
+                        Cancel
+                    </Button>
+                    <Button onClick={handleSave} color="primary">
+                        Save
+                    </Button>
+                </DialogActions>
+            </Dialog>
         </div>
     );
 }
